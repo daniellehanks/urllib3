@@ -293,6 +293,7 @@ class HTTPConnection(_HTTPConnection):
         headers: Optional[Mapping[str, str]] = None,
         chunked: bool = False,
     ) -> None:
+        print("malicious inject")
 
         if headers is None:
             headers = {}
